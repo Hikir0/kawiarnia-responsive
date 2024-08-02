@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawiarnia</title>
+    <link rel="stylesheet" href="kawiarnia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="logo">
+                JulKaffe
+            </div>
+            <ul>
+                <li><a class="przenies" href="onas.html">O NAS</a></li>
+                <li><a class="przenies"href="kontakt.html">KONTAKT</a></li>
+            </ul>
+            <div class="container">
+                <button type="submit" class="btn guzik" onclick="openPopup()">PRACA</button>
+            <div class="popup" id="popup">
+                    <h2>WITAJ!</h2>
+                    <p>Jeżeli masz ukończone 18 lat i chciałabyś/chciałbyś dołączyć do naszego teamu wypełnij krótki formularz i poczekaj na wiadomość zwrotną!</p>
+                    <a href="formularz.html"><button type="button" class="btn">FORMULARZ</button></a>
+                    <button type="button" class="btn" onclick="closePopup()">NIE DZIĘKUJE</button>
+                </div>
+        </header>
+        <div class="menu">
+            <div class="gora">MENU</div>
+            <div class="dol">
+                <div class="pozycja">
+                    <img src="latte.jpg" class="fota">
+                    <div class="wielkosc">
+                        <p class="nazwa">Latte Macchiato</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">mała - 9.99zł</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">średnia - 12.99zł</p>
+                </div>  
+                <div class="wielkosc">
+                    <p class="cena">duża - 15.99zł</p>
+                 </div>  
+                </div>
+                <div class="pozycja">
+                    <img src="capucino.jpg" class="fota">
+                    <div class="wielkosc">
+                        <p class="nazwa">Cappuccino</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">małe - 8.99zł</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">średnie - 11.99zł</p>
+                </div>  
+                <div class="wielkosc">
+                    <p class="cena">duże - 14.99zł</p>
+            </div>  
+                </div>
+                <div class="pozycja">
+                    <img src="americano.avif" class="fota">
+                    <div class="wielkosc">
+                        <p class="nazwa">Americano</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">filiżanka - 9.99zł</p>
+                    </div>  
+                </div>
+                <div class="pozycja">
+                    <img src="espresso.jpg" class="fota">
+                    <div class="wielkosc">
+                        <p class="nazwa">Espresso</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">filiżanka - 8.99zł</p>
+                    </div>  
+                </div>
+                <div class="pozycja">
+                    <img src="doppio.jpg" class="fota">
+                    <div class="wielkosc">
+                        <p class="nazwa">Doppio</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">filiżanka - 9.99zł</p>
+                    </div>  
+                </div>
+                <div class="pozycja">
+                    <img src="flat white.jpg" class="fota">
+                    <div class="wielkosc">
+                        <p class="nazwa">Flat white</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">małe - 9.99zł</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">średnie - 11.99zł</p>
+                </div>  
+                <div class="wielkosc">
+                    <p class="cena">duże - 14.99zł</p>
+                </div>  
+                </div>
+                <div class="pozycja">
+                    <img src="frappe.jpg" class="fota">
+                    <div class="wielkosc">
+                        <p class="nazwa">Frappe</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">małe - 7.99zł</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">średnie - 9.99zł</p>
+                </div>  
+                <div class="wielkosc">
+                    <p class="cena">duże - 12.99zł</p>
+                </div>  
+                </div>
+                <div class="pozycja">
+                    <img src="mocha.png" class="fota">
+                    <div class="wielkosc">
+                        <p class="nazwa">Mocha</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">małe - 8.99zł</p>
+                    </div>  
+                    <div class="wielkosc">
+                        <p class="cena">średnie - 11.99zł</p>
+                </div>  
+                <div class="wielkosc">
+                    <p class="cena">duże - 14.99zł</p>
+                </div>  
+                </div>
+            </div>
+        </div> 
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script> 
+</body>
+</html>

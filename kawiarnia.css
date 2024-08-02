@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+  }
+  
+
+body {
+    margin: 0;
+    background-size: cover;
+    background-image: url(kawiarnia.png);
+    backdrop-filter: blur(5px);
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    font-size: 70px;
+    color: rgb(255, 218, 97);
+    text-decoration: double;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 50px;
+}
+
+ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(170, 124, 67);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: solid 3px black;
+}
+
+button {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 197, 90);
+    color: black;
+    border: solid 3px black;
+}
+
+.przenies:hover {
+    transition: 0.3s;
+    background-color: rgb(235, 188, 119);
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+
+.przenies:not(:hover) {
+    transition: 0.3s;
+}
+
+.guzik:hover {
+    transition: 0.3s;
+    padding: 15px 25px;
+    background-color: rgb(221, 150, 44);
+}
+
+.guzik:not(:hover) {
+    transition: 0.3s;
+}
+
+.menu {
+    margin-left: 18%;
+    color: black;
+    margin-top: 100px;
+    width: 1200px;
+    height: 1100px;
+    border-radius: 20px;
+    
+}
+
+.gora {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    padding-top: 40px;
+}
+
+.dol {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    row-gap: 100px;
+    padding-top: 50px;
+}   
+
+.pozycja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 250px;
+    border: 2px solid rgb(131, 88, 39);
+    border-radius: 10px;
+}
+.fota {
+    width: 200px ;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.nazwa {
+    font-size: 25px;
+    color: white;
+    text-shadow: 8px 8px 14px black; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cena {
+    font-size: 17px;
+    color: white;
+    text-shadow: 8px 8px 14px black;
+}
+
+.wielkosc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opis {
+    display: flex;
+}
+
+.reszta {
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 27px;
+    color: rgb(255, 228, 179);
+}
+
+.kontakty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.kont {
+    color: rgb(255, 228, 179);
+    display: flex;
+    align-items: center; 
+    margin-top: 50px;
+}
+
+.ikonka {
+    margin-right: 50px;
+    background-color: rgb(189, 145, 63);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}   
+
+.opis2 {
+    font-size: 60px;
+}
+
+.popup {
+    width: 400px;
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 20px 30px 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 1000;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 30%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1000;
+}
+
+.popup h2 {
+
+    z-index: 1000;
+}
+
+.popup p {
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.popup button {
+    height: 80px;
+    width: 200px;
+    margin-top: 20px;
+    background-color: #277dc4;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);    
+    z-index: 1000;
+}
+
+form {
+    padding-top: 20px;
+    margin-left: 130px;
+    margin-top: 100px;
+    width:900px;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(235, 188, 119);
+    font-size: 30px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 30px;
+}
+
+.kto, .doswiadczenie, .dlaczego, .sobie{
+    width: 400px;
+}
+
+.wiek {
+    width: 50px;
+}
+
+@media screen and (max-width: 384px) {
+
+ 
+
+
+    body {
+        background-image: none;
+        background-color: rgb(92, 50, 0);
+        width: 384px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 384px;
+        display: block;
+    }
+
+    .gora {
+        padding-top: 350px;
+        padding-right: 135px;
+        width: 384px;
+    }
+
+    .dol {
+        width: 384px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        justify-content: center;
+    }
+    
+    .tytul {
+        display:flex;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .reszta {
+        padding-top: 50px;
+        padding-right: 145px;
+    }
+
+    .kontakty {
+        padding-right: 85px;
+    }
+
+
+    .kont {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .ikonka {
+        width: 60px;
+        height: 60px;
+    }
+
+    .opis2 {
+        font-size: 30px;
+        padding-right: 45px;
+        padding-top: 20px;
+    }
+
+    .tytul2 {
+        padding-top: 500px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    .kto, .doswiadczenie, .dlaczego, .sobie {
+        width: 200px;
+    }
+
+    form {
+        padding-top: 50px;
+        padding-right: 145px;
+        width: 384px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .doswiadczenie2 {
+        display: flex;
+        text-align: center;
+    }
+
+}

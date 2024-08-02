@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawiarnia</title>
+    <link rel="stylesheet" href="kawiarnia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="logo">
+                JulKaffe
+            </div>
+            <ul>
+                <li><a class="przenies"href="index.html">MENU</a></li>
+                <li><a class="przenies"href="kontakt.html">KONTAKT</a></li>
+            </ul>
+            <div class="container">
+                <button type="submit" class="btn guzik" onclick="openPopup()">PRACA</button>
+            <div class="popup" id="popup">
+                    <h2>WITAJ!</h2>
+                    <p>Jeżeli masz ukończone 18 lat i chciałabyś/chciałbyś dołączyć do naszego teamu wypełnij krótki formularz i poczekaj na wiadomość zwrotną!</p>
+                    <a href="formularz.html"><button type="button" class="btn">FORMULARZ</button></a>
+                    <button type="button" class="btn" onclick="closePopup()">NIE DZIĘKUJE</button>
+                </div>
+        </header>
+        <div class="menu">
+            <div class="tytul gora">NASZA KAWIARNIA</div>
+            <div class="reszta">Kawiarnia, o której chciałbyś/chciałabyś usłyszeć, to miejsce niezwykłe pełne ciepła i aromatycznych zapachów. Gdy przekraczasz próg, witają cię miękkie dźwięki jazzowej muzyki, która tworzy przyjemną atmosferę do relaksu. Wnętrze urządzone jest w rustykalnym stylu z wygodnymi fotelami i stolikami, które zachęcają do spędzenia czasu przy dobrej kawie. Na ścianach wiszą prace lokalnych artystów, dodając kawiarni charakteru i oryginalności.
+
+                Menu kawiarni to prawdziwa uczta dla miłośników kawy. Możesz wybrać spośród różnorodnych gatunków ziaren, a barista przygotuje dla ciebie napój dopasowany do twych upodobań. Oprócz kawy serwowane są także świeże wypieki, takie jak aromatyczne croissanty czy kuszące ciasta, które doskonale komponują się z gorącym napojem.
+                
+                To miejsce przyciąga nie tylko miłośników kawy, ale także pasjonatów czytania i spotkań towarzyskich. W kawiarni organizowane są wieczory poezji, dyskusje literackie oraz koncerty lokalnych artystów, tworząc przestrzeń do inspirujących spotkań i wymiany myśli. To idealne miejsce, aby oderwać się od zgiełku codzienności i zanurzyć w magicznej atmosferze kulturalnego życia miasta.</div>
+        </div>
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+</body>
+</html>

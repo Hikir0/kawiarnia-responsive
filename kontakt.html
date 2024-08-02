@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawiarnia</title>
+    <link rel="stylesheet" href="kawiarnia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="logo">
+                JulKaffe
+            </div>
+            <ul>
+                <li><a class="przenies"href="index.html">MENU</a></li>
+                <li><a class="przenies"href="onas.html">O NAS</a></li>
+            </ul>
+            <div class="container">
+                <button type="submit" class="btn guzik" onclick="openPopup()">PRACA</button>
+            <div class="popup" id="popup">
+                    <h2>WITAJ!</h2>
+                    <p>Jeżeli masz ukończone 18 lat i chciałabyś/chciałbyś dołączyć do naszego teamu wypełnij krótki formularz i poczekaj na wiadomość zwrotną!</p>
+                    <a href="formularz.html"><button type="button" class="btn">FORMULARZ</button></a>
+                    <button type="button" class="btn" onclick="closePopup()">NIE DZIĘKUJE</button>
+                </div>
+        </header>
+        <div class="menu">
+            <div class="tytul gora">KONTAKT</div>
+            <div class="">
+                <div class="kontakty">
+                <div class="kont"><img src="telephone_ (1).png" class="ikonka"><div class="opis2">123-456-789</div></div>
+                <div class="kont"><img src="email_ (1).png" class="ikonka"><div class="opis2">JulKaffe@gmail.com</div></div>
+                <div class="kont"><img src="location_.png" class="ikonka"><div class="opis2">Długa 5 Warszawa</div></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+</body>
+</html>
